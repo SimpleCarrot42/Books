@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+nav {
+    width: 80%; /* changed from 100vw to 80% to match the hero section width */
+    height: 100px;
+    margin: 0 auto; /* added to center the navigation bar */
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* changed from absolute to relative */
+    font-size: 19px;
+    font-weight: 500;
+    display: flex;
+}
+nav h1{
+    color: #114b5f;
+    font-weight: 700;
+    font-size: 34px;
+    cursor: pointer;
+}
+.logo{
+    width: 120px;
+}
+.user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #114b5f;
+    text-decoration: none;
+}
+hr{
+    width: 80%;
+    margin: 0 auto;
+    color: #000;
+}
+.new-book{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1%;
+    padding-top: 5px;
+    background-color: #679289;
+    border-radius: 10px;
+    align-content: space-around;
+}
+.new-book img{
+    width: 350px;
+    height: 550px;
+    border-radius: 5px;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1.4%;
+    cursor: pointer;
+}
+.new-text{
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1.4%;
+    color: #fff;
+}
+.new-text h2{
+    font-size: 35px;
+}
+.new-text p{
+    font-size: 24px;
+}
+.shortcut img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 3%;
+    width: 5%;
+    cursor: pointer;
+}
+/*  */
+.bookList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.bookList > * {
+    flex: 1;
+    max-width: 250px; /* set the maximum width to 250px */
+    margin: 10px;
+  }
+
+.bookCard {
+    flex: 1;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    display: flex; 
+    flex-direction: column;
+  }
+  .bookCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 550px;
+    margin-top: 4%;
+  }
+  
+  .autor {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  #link {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .cardInfo{
+    margin: 10px;
+  }
+/* Responzive design */
+@media (max-width: 1725px) {
+    #d{
+        display: none;
+    }
+}
+@media (max-width: 1024px) {
+    #c{
+        display: none;
+    }
+}

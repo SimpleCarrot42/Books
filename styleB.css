@@ -1,0 +1,122 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styling */
+  nav {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+    font-weight: 500;
+  }
+  
+  nav h1 {
+    color: #000;
+    font-weight: 700;
+    font-size: 34px;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  nav img {
+    height: 25px;
+    width: 25px;
+  }
+  
+  /* Book List Section */
+  .bookList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
+    gap: 20px; /* Space between cards */
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  .bookCard {
+    flex: 1 1 250px; /* Grow and shrink with a base width of 250px */
+    max-width: 300px; /* Maximum width for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; /* Optional: Add background color */
+  }
+  
+  .bookCard img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 350px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .cardInfo {
+    padding: 10px;
+  }
+  
+  .autor {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  #short-name {
+    font-size: 24px;
+    margin: 5px 0;
+  }
+  
+  #link {
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: auto; /* Push the button to the bottom */
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none; /* Hide nav menu on smaller screens */
+    }
+  
+    #ham-menu {
+      display: block; /* Show hamburger menu */
+      cursor: pointer;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    #ham-menu {
+      display: none; /* Hide hamburger menu on larger screens */
+    }
+  }
+  
