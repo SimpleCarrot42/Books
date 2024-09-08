@@ -160,6 +160,41 @@ hr{
 .cardInfo{
     margin: 10px;
   }
+/* Book detail */
+.bookFacts{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.infoHeader{
+    display: flex;
+    text-align: center;
+    margin-top: 7px;
+    flex-direction: column;
+}
+.infoHeader h2{
+    color: grey;
+}
+
+ .quickInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    padding: 5px;
+    align-items: stretch;
+    width: 88%;
+}
+.quickInfo h2{
+    padding: 5px;
+}
+.quickInfo p{
+    padding: 3px;
+    font-size: 16px;
+}
 /* Responzive design */
 @media(min-width:1725px) {
     #ham-menu{
