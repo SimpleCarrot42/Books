@@ -156,6 +156,7 @@ hr{
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+    text-decoration: none;
 }
 .cardInfo{
     margin: 10px;
