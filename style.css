@@ -183,10 +183,12 @@ hr{
     text-align: left;
     margin-top: 7px;
     flex-direction: column;
-    margin-left: 1%;
+    margin-left: 4px;
 }
 .infoHeader h2{
     color: grey;
+    padding: 0;
+    margin-bottom: 3%;
 }
 
 .quickInfo{
