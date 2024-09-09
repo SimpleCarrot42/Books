@@ -161,44 +161,72 @@ hr{
     margin: 10px;
   }
 /* Book detail */
+.bookInfo{
+    padding: 3px;
+    margin-left: 2%;
+}
+.bookInfo p,h2{
+    padding: 5px;
+}
 .bookFacts{
     display: flex;
     margin: auto;
-    width: 70%;
+    width: 88%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .infoHeader{
     display: flex;
-    text-align: center;
+    text-align: left;
     margin-top: 7px;
     flex-direction: column;
+    margin-left: 1%;
 }
 .infoHeader h2{
     color: grey;
 }
 
- .quickInfo{
+.quickInfo{
     display: flex;
     flex-direction: column;
     margin-left: 7%;
     padding: 5px;
+    margin-left: 3%;
     align-items: stretch;
     width: 88%;
 }
 .quickInfo h2{
-    padding: 5px;
+    padding: 4px;
 }
 .quickInfo p{
-    padding: 3px;
+    padding: 4px;
     font-size: 16px;
+}
+.bookFacts img{
+    width: 350px;
+    height: 530px;
+    margin: 5px;
+}  
+
+/* Responzive design */
+@media(min-width:1725px) {
+    #ham-menu{
+        display: none;
+    }
+    .bookFacts{
+        width: 70%;
+    }
+
 }
 /* Responzive design */
 @media(min-width:1725px) {
     #ham-menu{
         display: none;
+    }
+    .bookFacts{
+        width: 70%;
     }
 }
 @media (max-width: 1725px) {
@@ -214,6 +242,12 @@ hr{
     #ham-menu{
         display: none;
     }
+    .bookInfo{
+        font-size: 18px;
+    }
+    .bookFacts{
+        width: 80%;
+    }
 }
 @media (max-width: 1024px) {
     .bookCard{
@@ -224,6 +258,9 @@ hr{
         width: 288px;
         height: 380px;
         margin-top: 5%;
+    }
+    .bookInfo{
+        font-size: 13px;
     }
 }
 @media (max-width: 769px) {
@@ -239,6 +276,24 @@ hr{
     #link{
         align-items: flex-end;
     }
+    .bookFacts{
+        flex-direction: column;
+    }
+    .bookFacts img{
+        margin: auto;
+        width: 500px;
+        height: 700px;
+        margin-top: 8%;
+    }
+    .bookInfo{
+        font-size: 17px;
+    }
+    .bookInfo h2{
+        text-align: center;
+    }
+    .infoHeader{
+        text-align: center;
+    }
 }
 @media (max-width: 426px) {
     #nav-menu{
@@ -246,5 +301,25 @@ hr{
     }
     #ham-menu{
         display: flex;
+    }
+    .bookFacts img{
+        width: 330px;
+        height: 520px;
+        margin-top: 2%;
+    }
+}
+@media (max-width: 376px) {
+    .bookFacts img{
+        width: 290px;
+        height: 430px;
+        margin-top: 6%;
+    }
+    .bookFacts{
+        width: 92%;
+    }
+}
+@media (max-width: 320px) {
+    .bookFacts img{
+        margin-top: 1%;
     }
 }
