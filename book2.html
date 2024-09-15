@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stařec a moře</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="fix">
+      <nav>
+        <h1>Knihy</h1>
+        <ul id="nav-menu">
+          <a onclick="showSidebar()" href="#" id="no-hover">
+            <img src="images/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </a>
+        </ul>
+        <div class="sidebar">
+          <a onclick="hideSidebar()" href="#">
+            <img
+              src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Close icon"
+            />
+          </a>
+          <a href="index.html">Knihy</a>
+          <a href="#">O mne</a>
+          <a href="#">Kontakt</a>
+        </div>
+        <!-- Place for a theme switcher -->
+      </nav>
+    </div>
+    <!-- Book section -->
+    <div class="bookFacts">
+      <img src="images/OldManAtTheSea2.jpg" alt="Obálka knihy stařec a more" />
+      <div class="bookInfo">
+        <div class="infoHeader">
+          <h1>Stařec a moře</h1>
+          <h2>Ernest Hemingway</h2>
+        </div>
+        <div class="quickinfo">
+          <h2>Stručný popis</h2>
+          <p>
+            Kniha je starém rybáři jenž jede na lov ryb kde ho zastihnou různé
+            komplikace. V pruběhu cesty přemýšlí nad životem a to je na knize to
+            zajímavé.
+          </p>
+          <h2>Vlastní nazor</h2>
+          <p>
+            Z knihy si toho hodně osdnesete, filozofie kterou v ní najdeme je
+            jedinečná a mě osobně otevřela uplně nový pohled na svět. Styl
+            kterým je kniha napsaná je také velive zajímavý a osobitý (žádná
+            postava v knize není nazvána jmeném)
+          </p>
+          <h2>Doporučení</h2>
+          <p>
+            Knihu je pro starší a je nutno nad ní přemýšlet. Filozofie je
+            složitá a abycom mohli pochpit k čemu se vztahuje mesíme pochopit
+            autora a naot je zapotřebí vyššího věku.
+          </p>
+          <h2>Moje honocení</h2>
+          <p>
+            Kniha je velice dobře napsaná a filozofie je velice zajímavá.
+            Rozhodně doporučuji je to tenká ale opravdu dobrá knižka. Nemám co
+            vytknout takže davám <b>9,5/10</b>.!
+          </p>
+        </div>
+        <button id="back" onclick="document.location='index.html'">Zpět</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
