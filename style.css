@@ -45,9 +45,56 @@ nav ul li a{
 }
 
 nav img{
-    height: 25px; /* Hamburger menu */
-    width: 25px;
+    margin-left: 99%;
 }
+
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.sidebar li:hover{
+    background-color: #f0f0f0;
+}
+
+.sidebar{
+    margin-top: 1%;
+    margin-right: 3%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    z-index: 999;
+    background-color: #ffffffc6;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb( 0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+    margin: 0 auto;
+}
+
+svg {
+    display: block;
+    margin-left: 97%;
+    width: 28px;
+    height: 28px;
+  }
+  
+  svg path {
+    fill: #5f6368;
+  }
 
 hr{
     width: 80%;
@@ -313,10 +360,17 @@ footer p {
     }
 }
 
+
 @media (max-width: 650px) {
     .bookFacts img{
         width: 340px;
         height: 540px;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .sidebar a{
+        margin-left: 3%;
     }
 }
 
