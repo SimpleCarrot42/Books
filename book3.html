@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Den pro Šakala</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="fix">
+      <nav>
+        <h1>Knihy</h1>
+        <ul id="nav-menu">
+          <a onclick="showSidebar()" href="#" id="no-hover">
+            <img src="images/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </a>
+        </ul>
+        <div class="sidebar">
+          <a onclick="hideSidebar()" href="#">
+            <img
+              src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Close icon"
+            />
+          </a>
+          <a href="index.html">Knihy</a>
+          <a href="#">O mne</a>
+          <a href="#">Kontakt</a>
+        </div>
+        <!-- Place for a theme switcher -->
+      </nav>
+    </div>
+    <!-- Book section -->
+    <div class="bookFacts">
+      <img
+        src="images/OneDayForTheJackal.jpg"
+        alt="Obálka knihy jeden den pro Sakala"
+      />
+      <div class="bookInfo">
+        <div class="infoHeader">
+          <h1>Den pro Šakala</h1>
+          <h2>Frederick Forsyth</h2>
+        </div>
+        <div class="quickinfo">
+          <h2>Stručný popis</h2>
+          <p>
+            Kniha je o nájemném vrahovy a atentárníkovy jenž je najat organizací
+            OAS (Francouzská proti gaulovská organizace) abz zabil francouzského
+            prezidenta Charlese de Gaula
+          </p>
+          <h2>Vlastní nazor</h2>
+          <p>
+            Kniaha byla skvělá líbilo se mi spoustu malých detailů i celková
+            zápletka byla dobře propracovaná. Autororvo umnění popisovat děj z
+            vícé úhlů naráz nám umožnuje sledovat postup obou stran na ráz, to
+            bylo společne s dějem neskutečně dobře zkloubené a to knize dodalo
+            na čtivosti.
+          </p>
+          <h2>Doporučení</h2>
+          <p>
+            Knihu je pro starší. Zápletkou knihy je atentát takže se v ní
+            vyskytuje násilí a krev..
+          </p>
+          <h2>Moje honocení</h2>
+          <p>
+            Kniha je velice dobře napsaná a zápletka je skvělá. Rozhodně
+            doporučuji je to zajímavá a čtivá kniha. Jediné co vztknu je
+            prílišné prodlužovaní a napínaní děj což bylo lechce flustrující,
+            dávám tedy <b>9,5/10</b>!
+          </p>
+        </div>
+        <button id="back" onclick="document.location='index.html'">Zpět</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
