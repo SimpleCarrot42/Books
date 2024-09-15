@@ -1,44 +1,90 @@
 <!DOCTYPE html>
 <html lang="cz">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Na zapdní frontě klid</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="fix">
-        <nav>
-          <h1>Books</h2>
-          <ul id="nav-menu">
-            <img src="images/Hamburger_icon.png" id="ham-menu">
-          </ul>
-          <!-- Place for a theme switcher -->
-        </nav>
-      </div>
-      <!-- Book section -->
-       <div class="bookFacts">
-            <img src="images/AllQuietOn...jpg" alt="Obálka knihy Na zapadni frontě klid.">
-            <div class="bookInfo">
-                <div class="infoHeader">
-                    <h1>Na zapadní frontě klid</h1>
-                    <h2>Erich Maria Remaque</h2>
-                </div>
-                <div class="quickinfo">
-                    <h2>O knize</h2>
-                    <p>
-                        Tato velice zajímavá kniha napsaná v roce 1929, má 190 stran. Jedná se o válečny román, napsal jí Erich Maria Remarque (1898 - 1970) poté co se vrátil z první světové války kde bojoval na zapadní frontě. Tato verze naní finalní jendá se jen o mvp. Lorem ipsum dolor sit amet.
-                    </p>
-                    <h2>Popis knihy</h2>
-                    <p>
-                        Kniha vypraví příběh několika kamarádů jenž bojují na západní forntě první světové války. Příběh je vyprávěn z pohledu 19 letého Pavla jenž na frontě spolu s jeho kamarády bojuje na frontě, kde se postupně učí rozeznávat zvuky jednotlivých granátu. Kniha popisuje i hrůzy které tam vidí. Autor nám do detailu popisuje umírající vojáky a morálku fonty jenž se liší od té kterou propagují noviny. Kniha ale není jen o válcé popisuje táké přiběhy za frontou, které Pavel proživá, jako ku příkladu návštěvu své umírající matky nebo smrt některých z jeho kamarádu. Kniha je celkově spíše depreivní a donutí člověka přemýšlet. Více bude doplněno později. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat officia distinctio deserunt hic unde dicta saepe dolor delectus non dolore quo sit asperiores, error velit. Incidunt temporibus non velit commodi totam sed laboriosam beatae itaque, fugit sint. Neque tenetur veritatis facere similique assumenda placeat. 
-                    </p>
-                    <h2>Moje honocení</h2>
-                    <p>Kniha je velice dobře napsaná a promyšlená autor to se zaměřil i na ty najmensí detaily. Rozhodně doporučuji je to tenká ale opravdu dobrá knižka. Nemám co vytknout takže davám 9/10.Více bude dopněno později Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        
-            </div>
-            <button id="back" onclick="document.location='index.html'">Zpět</button>    
-            </div>
+      <nav>
+        <h1>Knihy</h1>
+        <ul id="nav-menu">
+          <a onclick="showSidebar()" href="#" id="no-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-5h18v-2H3v2z" />
+            </svg>
+          </a>
+        </ul>
+        <div class="sidebar">
+          <a onclick="hideSidebar()" href="#">
+            <img
+              src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Close icon"
+            />
+          </a>
+          <a href="index.html">Knihy</a>
+          <a href="#">O mne</a>
+          <a href="#">Kontakt</a>
         </div>
-</body>
+        <!-- Place for a theme switcher -->
+      </nav>
+    </div>
+    <!-- Book section -->
+    <div class="bookFacts">
+      <img
+        src="images/AllQuietOn...jpg"
+        alt="Obálka knihy Na zapadni frontě klid."
+      />
+      <div class="bookInfo">
+        <div class="infoHeader">
+          <h1>Na zapadní frontě klid</h1>
+          <h2>Erich Maria Remaque</h2>
+        </div>
+        <div class="quickinfo">
+          <h2>O knize</h2>
+          <p>
+            Tato velice zajímavá kniha napsaná v roce 1929, má 190 stran. Jedná
+            se o válečny román, napsal jí Erich Maria Remarque (1898 - 1970)
+            poté co se vrátil z první světové války kde bojoval na zapadní
+            frontě. Tato verze naní finalní jendá se jen o mvp. Lorem ipsum
+            dolor sit amet.
+          </p>
+          <h2>Popis knihy</h2>
+          <p>
+            Kniha vypraví příběh několika kamarádů jenž bojují na západní forntě
+            první světové války. Příběh je vyprávěn z pohledu 19 letého Pavla
+            jenž na frontě spolu s jeho kamarády bojuje na frontě, kde se
+            postupně učí rozeznávat zvuky jednotlivých granátu. Kniha popisuje i
+            hrůzy které tam vidí. Autor nám do detailu popisuje umírající vojáky
+            a morálku fonty jenž se liší od té kterou propagují noviny. Kniha
+            ale není jen o válcé popisuje táké přiběhy za frontou, které Pavel
+            proživá, jako ku příkladu návštěvu své umírající matky nebo smrt
+            některých z jeho kamarádu. Kniha je celkově spíše depreivní a donutí
+            člověka přemýšlet. Více bude doplněno později. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Ducimus placeat officia
+            distinctio deserunt hic unde dicta saepe dolor delectus non dolore
+            quo sit asperiores, error velit. Incidunt temporibus non velit
+            commodi totam sed laboriosam beatae itaque, fugit sint. Neque
+            tenetur veritatis facere similique assumenda placeat.
+          </p>
+          <h2>Moje honocení</h2>
+          <p>
+            Kniha je velice dobře napsaná a promyšlená autor to se zaměřil i na
+            ty najmensí detaily. Rozhodně doporučuji je to tenká ale opravdu
+            dobrá knižka. Nemám co vytknout takže davámb <b> 9/10</b>.
+          </p>
+        </div>
+        <button id="back" onclick="document.location='index.html'">Zpět</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
