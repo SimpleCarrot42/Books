@@ -12,12 +12,29 @@
       <nav>
         <h1>Knihy</h1>
         <ul id="nav-menu">
-          <img
-            src="images/Hamburger_icon.png"
-            alt="Hamburger menu"
-            id="ham-menu-home"
-          />
+          <a
+            onclick="showSidebar()"
+            href="#"
+            id="no-hover"
+            class="hamburger-menu"
+          >
+            <img
+              src="images/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </a>
         </ul>
+        <div class="sidebar">
+          <a onclick="hideSidebar()" href="#">
+            <img
+              src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Close icon"
+            />
+          </a>
+          <a href="#">Knihy</a>
+          <a href="#">O mne</a>
+          <a href="#">Kontakt</a>
+        </div>
         <!-- Place for a theme switcher -->
       </nav>
     </div>
@@ -46,7 +63,9 @@
           <h1>Starec a more</h1>
           <p class="autor">Ernest Hemingway</p>
         </div>
-        <p id="link">Vice informaci</p>
+        <button id="link" onclick="document.location = 'book2.html'">
+          Vice informaci
+        </button>
       </div>
       <div class="bookCard" id="d">
         <img src="images/OneDayForTheJackal.jpg" alt="A book" />
@@ -54,7 +73,9 @@
           <h1>Jeden den pro Sakala</h1>
           <p class="autor">Frederick Forsyth</p>
         </div>
-        <p id="link">Vice informaci</p>
+        <button id="link" onclick="document.location = 'book3.html'">
+          Vice informaci
+        </button>
       </div>
       <div class="bookCard" id="d">
         <img src="images/DayOfTheTrifids.jpg" alt="A book" />
@@ -70,7 +91,9 @@
           <h1>Ja robot</h1>
           <p class="autor">Isacc Asimov</p>
         </div>
-        <p id="link">Vice informaci</p>
+        <button id="link" onclick="document.location = 'book4.html'">
+          Vice informaci
+        </button>
       </div>
     </div>
     <footer>
@@ -78,4 +101,6 @@
       <p>&copy Marek Janasek 2024</p>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
+
