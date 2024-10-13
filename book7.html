@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Den Trifidů</title>
+    <link
+      rel="icon"
+      href="images/book_24dp_000_FILL0_wght400_GRAD0_opsz24.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="fix">
+      <nav>
+        <h1>Knihy</h1>
+        <ul id="nav-menu">
+          <a onclick="showSidebar()" href="#" id="no-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-5h18v-2H3v2z" />
+            </svg>
+          </a>
+        </ul>
+        <div class="sidebar" style="display: none">
+          <a onclick="hideSidebar()" href="#"
+            ><img
+              src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Close icon"
+          /></a>
+          <a href="index.html">Knihy</a>
+          <a href="#">O mne</a>
+          <a href="#">Kontakt</a>
+        </div>
+        <!-- Place for a theme switcher -->
+      </nav>
+    </div>
+    <!-- Book section -->
+    <div class="bookFacts">
+      <img
+        src="images/DayOfTheTrifids.jpg"
+        alt="Obálka knihy Na zapadni frontě klid."
+        id="cover-img"
+      />
+      <div class="bookInfo">
+        <div class="infoHeader">
+          <h1>Den Trifidů</h1>
+          <h2>John Wyndham</h2>
+        </div>
+        <div class="quickinfo">
+          <h2>O knize</h2>
+          <p>
+            Den trifidů je klasický sci-fi román, který líčí svět po katastrofě,
+            kdy většina lidstva oslepne po neobvyklém meteorickém jevu. Hlavní
+            hrdina, Bill Masen, je jedním z mála, kdo si uchová zrak. Svět však
+            ohrožují trifidi – geneticky modifikované rostliny, které se
+            pohybují a mají smrtící žihadla. Lidé, kteří ztratili zrak, se
+            stávají snadnou kořistí, a civilizace se začíná hroutit. Bill se
+            snaží přežít v chaotickém světě a najít bezpečné útočiště. Kniha
+            zkoumá témata přežití, morálky a lidské slabosti tváří v tvář
+            přírodním hrozbám.
+          </p>
+          <h2>Můj názor</h2>
+          <p>
+            Tato kniha má velice dobrý a zajímavý příběh. Děj je plný náhlých
+            zvratů a překvapení, je tedy velice napínavý a čtivý. Kniha je také
+            velice dobře napsaná, je plná zajímavých detailů.
+          </p>
+          <h2>Doporučení a honocení</h2>
+          <p>
+            Knihu doporučuji všem čtenářům apokalyptických příběhů. Je to
+            přemýšlivý a zároveň napínavý román. Moje hodnocení:
+            <b> 9/10</b>
+            <img src="images/star2.png" alt="A star icon" id="star-icon" />.
+          </p>
+        </div>
+        <button id="back" onclick="document.location='index.html'">Zpět</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
