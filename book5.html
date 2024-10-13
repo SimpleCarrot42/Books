@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1948</title>
+    <link
+      rel="icon"
+      href="images/book_24dp_000_FILL0_wght400_GRAD0_opsz24.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="fix">
+      <nav>
+        <h1>Knihy</h1>
+        <ul id="nav-menu">
+          <a onclick="showSidebar()" href="#" id="no-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-5h18v-2H3v2z" />
+            </svg>
+          </a>
+        </ul>
+        <div class="sidebar" style="display: none">
+          <a onclick="hideSidebar()" href="#"
+            ><img
+              src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Close icon"
+          /></a>
+          <a href="index.html">Knihy</a>
+          <a href="#">O mne</a>
+          <a href="#">Kontakt</a>
+        </div>
+        <!-- Place for a theme switcher -->
+      </nav>
+    </div>
+    <!-- Book section -->
+    <div class="bookFacts">
+      <img
+        src="images/1984.jpeg"
+        alt="Obálka knihy Na zapadni frontě klid."
+        id="cover-img"
+      />
+      <div class="bookInfo">
+        <div class="infoHeader">
+          <h1>1984</h1>
+          <h2>George Orwell</h2>
+        </div>
+        <div class="quickinfo">
+          <h2>O knize</h2>
+          <p>
+            V dystopickém románu 1984 George Orwell vykresluje svět, kde
+            totalitní režim ovládá každou část života. Hlavní postava, Winston
+            Smith, pracuje v Ministerstvu pravdy, kde přepisuje historii podle
+            požadavků Strany. Všudypřítomný Velký bratr sleduje občany a
+            kontroluje jejich myšlení. Orwell ve své knize zobrazuje nejen
+            fyzickou, ale i psychickou kontrolu, kterou stát nad lidmi
+            uplatňuje. V příběhu se Winston pokouší vzepřít, zamiluje se do
+            Julie a sní o svobodě. Nakonec je však zrazen, uvězněn a podroben
+            brutálnímu mučení, které ho donutí vše vzdát a bezpodmínečně
+            přijmout Stranu.
+          </p>
+          <h2>Můj názor</h2>
+          <p>
+            Kniha nabízí mnoho myšlenek a otázek. Představuje nám uplně jiný
+            svět. Autor popisuje každodenní život v totalitním režimu a touhu po
+            svobodě, což pro mne bylo velice neobvyklé. Všechny detaily a emoce,
+            které autor popisuje mě velmi zaujaly. Kniha je velice známá.
+          </p>
+          <h2>Doporučení a honocení</h2>
+          <p>
+            1984 doporučuji každému, kdo má zájem o politiku. Ukazuje nám jak je
+            svoboda cená. Je to velice čtivý a silný příběh. Moje hodnocení:
+            <b> 9/10</b>
+            <img src="images/star2.png" alt="A star icon" id="star-icon" />.
+          </p>
+        </div>
+        <button id="back" onclick="document.location='index.html'">Zpět</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
