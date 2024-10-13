@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Na zapdní frontě klid</title>
+    <link
+      rel="icon"
+      href="images/book_24dp_000_FILL0_wght400_GRAD0_opsz24.png"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -23,13 +27,12 @@
             </svg>
           </a>
         </ul>
-        <div class="sidebar">
-          <a onclick="hideSidebar()" href="#">
-            <img
+        <div class="sidebar" style="display: none">
+          <a onclick="hideSidebar()" href="#"
+            ><img
               src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
               alt="Close icon"
-            />
-          </a>
+          /></a>
           <a href="index.html">Knihy</a>
           <a href="#">O mne</a>
           <a href="#">Kontakt</a>
@@ -42,44 +45,37 @@
       <img
         src="images/AllQuietOn...jpg"
         alt="Obálka knihy Na zapadni frontě klid."
+        id="cover-img"
       />
       <div class="bookInfo">
         <div class="infoHeader">
-          <h1>Na zapadní frontě klid</h1>
+          <h1>Na západní frontě klid</h1>
           <h2>Erich Maria Remaque</h2>
         </div>
         <div class="quickinfo">
           <h2>O knize</h2>
           <p>
-            Tato velice zajímavá kniha napsaná v roce 1929, má 190 stran. Jedná
-            se o válečny román, napsal jí Erich Maria Remarque (1898 - 1970)
-            poté co se vrátil z první světové války kde bojoval na zapadní
-            frontě. Tato verze naní finalní jendá se jen o mvp. Lorem ipsum
-            dolor sit amet.
+            Román Na západní frontě klid popisuje hrůzy první světové války z
+            pohledu mladého německého vojáka Paula Bäumera. Paul a jeho přátelé
+            narukují do války plni idealismu, ale rychle poznávají, že realita
+            boje je brutální a nelítostná. Remarque detailně vykresluje
+            zákopovou válku, každodenní utrpení vojáků, jejich ztráty, zranění a
+            zoufalství. Hlavní postava postupně ztrácí všechny iluze o hrdinství
+            a smyslu války, až se cítí zcela odcizená od civilního života.
           </p>
-          <h2>Popis knihy</h2>
+          <h2>Můj názor</h2>
           <p>
-            Kniha vypraví příběh několika kamarádů jenž bojují na západní forntě
-            první světové války. Příběh je vyprávěn z pohledu 19 letého Pavla
-            jenž na frontě spolu s jeho kamarády bojuje na frontě, kde se
-            postupně učí rozeznávat zvuky jednotlivých granátu. Kniha popisuje i
-            hrůzy které tam vidí. Autor nám do detailu popisuje umírající vojáky
-            a morálku fonty jenž se liší od té kterou propagují noviny. Kniha
-            ale není jen o válcé popisuje táké přiběhy za frontou, které Pavel
-            proživá, jako ku příkladu návštěvu své umírající matky nebo smrt
-            některých z jeho kamarádu. Kniha je celkově spíše depreivní a donutí
-            člověka přemýšlet. Více bude doplněno později. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Ducimus placeat officia
-            distinctio deserunt hic unde dicta saepe dolor delectus non dolore
-            quo sit asperiores, error velit. Incidunt temporibus non velit
-            commodi totam sed laboriosam beatae itaque, fugit sint. Neque
-            tenetur veritatis facere similique assumenda placeat.
+            Tato kniha je velice depresivní. Její příběh nutí k zamyšlení nad
+            válkou a jejími následky. Autor válku prožil, takže vypráví z
+            vlastní zkušenosti, a přenese čtenáře na bojiště první světové
+            války.
           </p>
-          <h2>Moje honocení</h2>
+          <h2>Doporučení a moje honocení</h2>
           <p>
-            Kniha je velice dobře napsaná a promyšlená autor to se zaměřil i na
-            ty najmensí detaily. Rozhodně doporučuji je to tenká ale opravdu
-            dobrá knižka. Nemám co vytknout takže davámb <b> 9/10</b>.
+            Kniha rozhodně stojí za prečtení, jedná se o jeden z nejznámějších
+            (proti)válečných románů. Doporučuji pro starší, protože obsahuje
+            spousty krvavý a násilných scén.<b> 9/10</b>
+            <img src="images/star2.png" alt="A star icon" id="star-icon" />.
           </p>
         </div>
         <button id="back" onclick="document.location='index.html'">Zpět</button>
