@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Den Trifidů</title>
+    <link
+      rel="icon"
+      href="images/book_24dp_000_FILL0_wght400_GRAD0_opsz24.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="fix">
+      <nav>
+        <h1>Knihy</h1>
+        <ul id="nav-menu">
+          <a onclick="showSidebar()" href="#" id="no-hover">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-5h18v-2H3v2z" />
+            </svg>
+          </a>
+        </ul>
+        <div class="sidebar" style="display: none">
+          <a onclick="hideSidebar()" href="#"
+            ><img
+              src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Close icon"
+          /></a>
+          <a href="index.html">Knihy</a>
+          <a href="#">O mne</a>
+          <a href="#">Kontakt</a>
+        </div>
+        <!-- Place for a theme switcher -->
+      </nav>
+    </div>
+    <!-- Book section -->
+    <div class="bookFacts">
+      <img
+        src="images/CavesOfSteel.jpeg"
+        alt="Obálka knihy Na zapadni frontě klid."
+        id="cover-img"
+      />
+      <div class="bookInfo">
+        <div class="infoHeader">
+          <h1>Ocelové jeskyně</h1>
+          <h2>Isaac Asimov</h2>
+        </div>
+        <div class="quickinfo">
+          <h2>O knize</h2>
+          <p>
+            Ocelové jeskyně je detektivní sci-fi román odehrávající se ve
+            vzdálené budoucnosti, kde lidé žijí v obrovských, přelidněných
+            městech (tzv. „ocelových jeskyních“). Hlavním hrdinou je detektiv
+            Elijah Baley, který je pověřen vyšetřením vraždy významného
+            vesmírného vědce. Na vyřešení případu spolupracuje s robotem R.
+            Danelem Olivawem, což Baley zpočátku nepřijímá kvůli svému strachu a
+            nedůvěře k robotům. Během vyšetřování se musí vypořádat nejen s
+            vraždou, ale i s hlubokými společenskými konflikty mezi lidmi Země a
+            tzv. „Vesmírňany“, kteří žijí na jiných planetách.
+          </p>
+          <h2>Můj názor</h2>
+          <p>
+            Ocelové jeskyně je úctyhodné spojení sci-fi a detektivního žánru.
+            Autor velmi dobře buduje komplexní a neuvěřitelný svět budoucnosti,
+            kde se odráží obavy z technologického pokroku a rozpory samotných
+            lidí.
+          </p>
+          <h2>Doporučení a honocení</h2>
+          <p>
+            Doporučuji knihu všem milovníkům sci-fi, detektivek a příběhů. Je to
+            zajímavý a vzrušující příběh, který nabízí více než jen klasickou
+            detektivku. Moje hodnocení:
+            <b> 9/10</b>
+            <img src="images/star2.png" alt="A star icon" id="star-icon" />.
+          </p>
+        </div>
+        <button id="back" onclick="document.location='index.html'">Zpět</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
