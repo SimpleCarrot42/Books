@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Books</title>
+    <link
+      rel="icon"
+      href="images/book_5_24dp_000_FILL0_wght400_GRAD0_opsz24.png"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -24,7 +28,7 @@
             />
           </a>
         </ul>
-        <div class="sidebar">
+        <div class="sidebar" style="display: none">
           <a onclick="hideSidebar()" href="#">
             <img
               src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
@@ -42,25 +46,28 @@
       <div class="bookCard" id="a">
         <img src="images/AllQuietOn...jpg" alt="A book" />
         <div class="cardInfo">
-          <h1>Na zapadni fronte klid</h1>
+          <h1>Na západní frontě klid</h1>
           <p class="autor">Erich Maria Remarque</p>
         </div>
         <button id="link" onclick="document.location = 'book1.html'">
           Vice informaci
         </button>
       </div>
+
       <div class="bookCard" id="b">
         <img src="images/1984.jpeg" alt="A book" />
         <div class="cardInfo">
           <h1 id="short-name">1984</h1>
           <p class="autor">George Orwell</p>
         </div>
-        <p id="link">Vice informaci</p>
+        <button id="link" onclick="document.location = 'book5.html'">
+          Vice informaci
+        </button>
       </div>
       <div class="bookCard" id="c">
         <img src="images/OldManAtTheSea2.jpg" alt="A book" />
         <div class="cardInfo">
-          <h1>Starec a more</h1>
+          <h1>Stařec a moře</h1>
           <p class="autor">Ernest Hemingway</p>
         </div>
         <button id="link" onclick="document.location = 'book2.html'">
@@ -70,7 +77,7 @@
       <div class="bookCard" id="d">
         <img src="images/OneDayForTheJackal.jpg" alt="A book" />
         <div class="cardInfo">
-          <h1>Jeden den pro Sakala</h1>
+          <h1>Den pro Šakala</h1>
           <p class="autor">Frederick Forsyth</p>
         </div>
         <button id="link" onclick="document.location = 'book3.html'">
@@ -80,18 +87,40 @@
       <div class="bookCard" id="d">
         <img src="images/DayOfTheTrifids.jpg" alt="A book" />
         <div class="cardInfo">
-          <h1>Den Trifidu</h1>
-          <p class="autor">John Wydham</p>
+          <h1>Den Trifidů</h1>
+          <p class="autor">John Wyndham</p>
         </div>
-        <p id="link">Vice informaci</p>
+        <button id="link" onclick="document.location = 'book7.html'">
+          Vice informaci
+        </button>
       </div>
       <div class="bookCard" id="d">
         <img src="images/IRobot.jpg" alt="A book" />
         <div class="cardInfo">
-          <h1>Ja robot</h1>
-          <p class="autor">Isacc Asimov</p>
+          <h1>Já, robot</h1>
+          <p class="autor">Isaac Asimov</p>
         </div>
         <button id="link" onclick="document.location = 'book4.html'">
+          Vice informaci
+        </button>
+      </div>
+      <div class="bookCard" id="a">
+        <img src="images/TwoLittleSavages.jpg" alt="A book" />
+        <div class="cardInfo">
+          <h1>Dva divoši</h1>
+          <p class="autor">Ernest Thompson Seton</p>
+        </div>
+        <button id="link" onclick="document.location = 'book6.html'">
+          Vice informaci
+        </button>
+      </div>
+      <div class="bookCard" id="a">
+        <img src="images/CavesOfSteel.jpeg" alt="A book" />
+        <div class="cardInfo">
+          <h1>Ocelové jeskyně</h1>
+          <p class="autor">Isaac Asimov</p>
+        </div>
+        <button id="link" onclick="document.location = 'book8.html'">
           Vice informaci
         </button>
       </div>
