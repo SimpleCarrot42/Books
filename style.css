@@ -85,9 +85,13 @@ nav a{
     margin: 0 auto;
 }
 
+a#no-hover{
+    margin-left: 90%;
+}
+
 svg {
     display: block;
-    margin-left: 97%;
+    /* margin-left: 97%; */
     width: 28px;
     height: 28px;
   }
@@ -247,9 +251,15 @@ footer p {
     padding: 4px;
 }
 
+
 .quickInfo p{
-    padding: 4px;
-    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+#star-icon{
+    height: 15px;
+    width: 15px;
+    margin: 0;
 }
 
 /* Back button */
@@ -319,6 +329,9 @@ footer p {
     .bookInfo{
         font-size: 13px;
     }
+    a#no-hover{
+        margin-left: 87%;
+    }
 }
 
 /* Tablet design */
@@ -358,6 +371,9 @@ footer p {
     .infoHeader{
         text-align: center;
     }
+    a#no-hover{
+        margin-left: 80%;
+    }
 }
 
 
@@ -385,6 +401,9 @@ footer p {
     #back {
         margin-left: 42%;
     }
+    a#no-hover{
+        margin-left: 60%;
+    }
     
 }
 
@@ -398,10 +417,16 @@ footer p {
     .bookFacts{
         width: 92%;
     }
+    a#no-hover{
+        margin-left: 55%;
+    }
 }
 
 @media (max-width: 320px) {
     .bookFacts img{
         margin-top: 1%;
+    }
+    a#no-hover{
+        margin-left: 40%;
     }
 }
