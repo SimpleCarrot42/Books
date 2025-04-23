@@ -4,65 +4,65 @@
     padding: 0;
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
-}
-
-/* Nav menu set up */
-nav {
+  }
+  
+  /* Nav menu set up */
+  nav {
     width: 80%;
     height: 100px;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative; 
+    position: relative;
     font-size: 19px;
     font-weight: 500;
     display: flex;
-}
-
-nav h1{
+  }
+  
+  nav h1{
     color: #000000;
     font-weight: 700;
     font-size: 34px;
     cursor: pointer;
-}
-
-nav ul{
+  }
+  
+  nav ul{
     width: 100%;
     text-align: right;
-}
-
-nav ul li{
+  }
+  
+  nav ul li{
     display: inline;
     list-style: none;
     margin: 10px 20px;
-}
-
-nav ul li a{
+  }
+  
+  nav ul li a{
     color: #000000;
     text-decoration: none;
-}
-
-nav img{
+  }
+  
+  nav img{
     margin-left: 99%;
-}
-
-
-nav a{
+  }
+  
+  
+  nav a{
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
     display: flex;
     align-items: center;
     color: #000;
-}
-
-.sidebar li:hover{
+  }
+  
+  .sidebar li:hover{
     background-color: #f0f0f0;
-}
-
-.sidebar{
+  }
+  
+  .sidebar{
     margin-top: 1%;
     margin-right: 3%;
     position: fixed;
@@ -79,17 +79,17 @@ nav a{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-}
-.sidebar li{
+  }
+  .sidebar li{
     width: 100%;
     margin: 0 auto;
-}
-
-a#no-hover{
+  }
+  
+  a#no-hover{
     margin-left: 90%;
-}
-
-svg {
+  }
+  
+  svg {
     display: block;
     /* margin-left: 97%; */
     width: 28px;
@@ -99,30 +99,30 @@ svg {
   svg path {
     fill: #5f6368;
   }
-
-hr{
+  
+  hr{
     width: 80%;
     margin: 0 auto;
     color: #000;
-}
-
-/* Book list set up */
-.bookList{
+  }
+  
+  /* Book list set up */
+  .bookList{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
     width: 90%;
     margin: 0 auto;
-}
-
-.bookList > * {
+  }
+  
+  .bookList > * {
     max-width: 250px; /* set the maximum width to 250px */
     margin: 10px;
-}
-
-/* Book card set up */
-.bookCard {
+  }
+  
+  /* Book card set up */
+  .bookCard {
     flex: 1;
     margin-left: 25px;
     margin-right: 25px;
@@ -133,12 +133,12 @@ hr{
     text-align: center;
     font-family: arial;
     border-radius: 5px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     min-width: 350px;
-}
-
-.bookCard img{
+  }
+  
+  .bookCard img{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -147,21 +147,21 @@ hr{
     margin-left: auto;
     margin-right:auto;
     margin-bottom: auto;
-}
-
-/* Spacing around the text */
-.cardInfo {
+  }
+  
+  /* Spacing around the text */
+  .cardInfo {
     padding: 5px;
-}
-
-/* About the book text */
-.autor {
+  }
+  
+  /* About the book text */
+  .autor {
     color: grey;
     font-size: 22px;
-}
-
-/* Link set up */
-#link {
+  }
+  
+  /* Link set up */
+  #link {
     border: none;
     outline: 0;
     padding: 12px;
@@ -173,71 +173,71 @@ hr{
     font-size: 18px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-}
-
-/* Link hover set up */
-#link:hover {
+  }
+  
+  /* Link hover set up */
+  #link:hover {
     background-color: #808080;
     transition: 0.3s;
-}
-
-/* Footer set  up */
-footer {
+  }
+  
+  /* Footer set  up */
+  footer {
     text-align: center;
     color: #808080;
     margin-top: 2%;
     margin-bottom: 2%;
-}
-footer p {
+  }
+  footer p {
     margin-top: 1%;
-}
-
-/* Book page */
-/* div set up */
-.bookInfo{
+  }
+  
+  /* Book page */
+  /* div set up */
+  .bookInfo{
     padding: 3px;
     margin-left: 2%;
     align-items: stretch;
-}
-
-.bookInfo p,h2{
+  }
+  
+  .bookInfo p,h2{
     padding: 5px;
     margin-right: 5%;
-    
-}
-
-.bookFacts{
+  
+  }
+  
+  .bookFacts{
     display: flex;
     margin: auto;
     width: 88%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     flex-direction: row;
-}
-
-/* Book cover set up */
-.bookFacts img{
+  }
+  
+  /* Book cover set up */
+  .bookFacts img{
     width: 350px;
     height: 530px;
     margin: 5px;
-}  
-
-/* Text design */
-.infoHeader{
+  }
+  
+  /* Text design */
+  .infoHeader{
     display: flex;
     text-align: left;
     margin-top: 7px;
     flex-direction: column;
     margin-left: 4px;
-}
-
-.infoHeader h2{
+  }
+  
+  .infoHeader h2{
     color: grey;
     padding: 0;
     margin-bottom: 3%;
-}
-
-.quickInfo{
+  }
+  
+  .quickInfo{
     display: flex;
     flex-direction: column;
     margin-left: 7%;
@@ -245,188 +245,253 @@ footer p {
     margin-left: 3%;
     align-items: stretch;
     width: 88%;
-}
-
-.quickInfo h2{
+  }
+  
+  .quickInfo h2{
     padding: 4px;
-}
-
-
-.quickInfo p{
+  }
+  
+  
+  .quickInfo p{
     width: 16px;
     height: 16px;
-}
-#star-icon{
+  }
+  #star-icon{
     height: 15px;
     width: 15px;
     margin: 0;
-}
-
-/* Back button */
-#back {
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 5%;
+    margin-left: 60%; /* Push container 75% to the left */
+    margin-right: 3%;
+    gap: 10px; /* Space between the buttons */
+    margin-bottom: 1%;
+  }
+  
+  .like-control {
+    height: 40px !important;
+    width: auto !important;
+    border-radius: 5px ;
+    background-color: #e1e1e1;
+    cursor: pointer ;
+    transition: 0.7s !important;
+    margin: 0 5px !important;
+    padding: 2px;
+  }
+  
+  /* Hover effect for all like/dislike buttons */
+  .like-control:hover {
+    opacity: 0.7; /* A common way to indicate hover */
+    border-radius: 12px; /* Rounded edges on hover */
+  }
+  
+  /* Specific hover colors for like buttons */
+  .like-control[id^="like-site"]:hover { /* Targets any element with class 'like-control' and ID starting with 'like-site' */
+    background-color: lightgreen;
+  }
+  
+  /* Specific hover colors for dislike buttons */
+  .like-control[id^="dislike-site"]:hover { /* Targets any element with class 'like-control' and ID starting with 'dislike-site' */
+    background-color: lightcoral;
+  }
+  
+  .like-count {
+    padding: 2px;
     border: none;
-    outline: 0;
-    padding: 12px;
+    font-size: 25px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  
+  .like-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align the like/dislike elements vertically */
+    gap: 10px; /* Space between the images and counts */
+  }
+  
+  #back {
     color: white;
     background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
     font-size: 18px;
-    text-decoration: none;
-    margin-left: 80%;
-    margin-top: 3%;
-    margin-bottom: 2%;
-}
-
-/* Back button hover */
-#back:hover {
+    padding: 10px 15px; /* Padding for consistent button sizing */
+    width: 80px; /* Fixed width for the back button */
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor for clickable button */
+  }
+  
+  /* Back button hover */
+  #back:hover {
     background-color: #808080;
     transition: 0.5s;
-}
-
-/* Responzive design */
-/* Monitor design */
-@media(min-width:1725px) {
+    border-radius: 5px;
+  }
+  
+  /* Responzive design */
+  /* Monitor design */
+  @media(min-width:1725px) {
     /* Book page set up */
     .bookFacts{
-        width: 70%;
+      width: 70%;
     }
-}
-
-@media (max-width: 1725px) {
+  }
+  
+  @media (max-width: 1725px) {
     /* Book card (home menu) */
     .bookCard{
-        max-width: 366px;
-        height: 550px;
+      max-width: 366px;
+      height: 550px;
     }
     .bookCard img{
-        width: 311px;
-        height: 380px;
-        margin-top: 5%;
+      width: 311px;
+      height: 380px;
+      margin-top: 5%;
     }
     /* Book detail info (book page) */
     .bookInfo{
-        font-size: 18px;
+      font-size: 18px;
     }
     .bookFacts{
-        width: 80%;
+      width: 80%;
     }
-}
-
-/* Normal laptop design */
-@media (max-width: 1024px) {
+  }
+  @media (min-width: 1225px) {
+    .button-container{
+      margin-left: 50%;
+    }
+  }
+  
+  /* Normal laptop design */
+  @media (max-width: 1024px) {
     /* Book card set up (home page) */
     .bookCard{
-        max-width: 333px;
-        height: 550px;
+      max-width: 333px;
+      height: 550px;
     }
     .bookCard img{
-        width: 288px;
-        height: 380px;
-        margin-top: 5%;
+      width: 288px;
+      height: 380px;
+      margin-top: 5%;
     }
     .bookInfo{
-        font-size: 13px;
+      font-size: 13px;
     }
     a#no-hover{
-        margin-left: 87%;
+      margin-left: 87%;
     }
-}
-
-/* Tablet design */
-@media (max-width: 769px) {
+    .like-control{
+      margin-left: 50%;
+    }
+    .button-container{
+      margin-left: 30%;
+    }
+    .like-count{
+      font-size: 20px;
+    }
+    .like-control{
+      height: 25px;
+      width: auto;
+    }
+  }
+  
+  /* Tablet design */
+  @media (max-width: 769px) {
     .bookCard{
-        max-width: 300px;
-        height: 550px;
+      max-width: 300px;
+      height: 550px;
     }
     .bookCard img{
-        width: 250px;
-        height: 380px;
-        margin-top: 5%;
+      width: 250px;
+      height: 380px;
+      margin-top: 5%;
     }
     #link{
-        align-items: flex-end;
+      align-items: flex-end;
     }
     /* Back button set up (Book page)*/
-    #back {
-        margin-left: 42%;
-    }
+  
     /* Book page switching to small screen (Book page) */
     .bookFacts{
-        flex-direction: column;
+      flex-direction: column;
     }
     .bookFacts img{
-        margin: auto;
-        width: 500px;
-        height: 700px;
-        margin-top: 8%;
+      margin: auto;
+      width: 500px;
+      height: 700px;
+      margin-top: 8%;
     }
     .bookInfo{
-        font-size: 17px;
+      font-size: 17px;
     }
     .bookInfo h2{
-        text-align: center;
+      text-align: center;
     }
     .infoHeader{
-        text-align: center;
+      text-align: center;
     }
     a#no-hover{
-        margin-left: 80%;
+      margin-left: 80%;
     }
-}
-
-
-@media (max-width: 650px) {
+    .button-container{
+      margin-left: 45%;
+    }
+  }
+  
+  
+  @media (max-width: 650px) {
     .bookFacts img{
-        width: 340px;
-        height: 540px;
+      width: 340px;
+      height: 540px;
     }
     .sidebar{
-        width: 100%;
+      width: 100%;
     }
     .sidebar a{
-        margin-left: 3%;
+      margin-left: 3%;
     }
-}
-
-/* Phone design */
-@media (max-width: 426px) {
+  }
+  
+  /* Phone design */
+  @media (max-width: 426px) {
     /* Book page set up */
     .bookFacts img{
-        width: 330px;
-        height: 520px;
-        margin-top: 2%;
-    }
-    #back {
-        margin-left: 42%;
+      width: 330px;
+      height: 520px;
+      margin-top: 2%;
     }
     a#no-hover{
-        margin-left: 60%;
+      margin-left: 60%;
     }
-    
-}
-
-/* Book page et up */
-@media (max-width: 376px) {
+    .button-container{
+      margin-left: 7%;
+    }
+  
+  }
+  
+  /* Book page et up */
+  @media (max-width: 376px) {
     .bookFacts img{
-        width: 290px;
-        height: 430px;
-        margin-top: 6%;
+      width: 290px;
+      height: 430px;
+      margin-top: 6%;
     }
     .bookFacts{
-        width: 92%;
+      width: 92%;
     }
     a#no-hover{
-        margin-left: 55%;
+      margin-left: 55%;
     }
-}
-
-@media (max-width: 320px) {
+  }
+  
+  @media (max-width: 320px) {
     .bookFacts img{
-        margin-top: 1%;
+      margin-top: 1%;
     }
     a#no-hover{
-        margin-left: 40%;
+      margin-left: 40%;
     }
-}
+  }
