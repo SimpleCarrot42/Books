@@ -1,105 +1,103 @@
 <!DOCTYPE html>
 <html lang="cz">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Na zapdní frontě klid</title>
     <link
-      rel="icon"
-      href="images/book_24dp_000_FILL0_wght400_GRAD0_opsz24.png"
+        rel="icon"
+        href="images/book_24dp_000_FILL0_wght400_GRAD0_opsz24.png"
     />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div id="fix">
-      <nav>
-        <h1>Knihy</h1>
-        <ul id="nav-menu">
-          <a onclick="showSidebar()" href="#" id="no-hover">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 0 24 24"
-              width="24px"
-              fill="#5f6368"
-            >
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-5h18v-2H3v2z" />
-            </svg>
-          </a>
-        </ul>
-        <div class="sidebar" style="display: none">
-          <a onclick="hideSidebar()" href="#"
-            ><img
-              src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
-              alt="Close icon"
-          /></a>
-          <a href="index.html">Knihy</a>
-          <a href="#">O mne</a>
-          <a href="#">Kontakt</a>
-        </div>
-        <!-- Place for a theme switcher -->
-      </nav>
+        <nav>
+            <h1>Knihy</h1>
+            <ul id="nav-menu">
+                <a onclick="showSidebar()" href="#" id="no-hover">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        width="24px"
+                        fill="#5f6368"
+                    >
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-5h18v-2H3v2z" />
+                    </svg>
+                </a>
+            </ul>
+            <div class="sidebar" style="display: none">
+                <a onclick="hideSidebar()" href="#"
+                    ><img
+                        src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt="Close icon"
+                /></a>
+                <a href="index.html">Knihy</a>
+                <a href="#">O mne</a>
+                <a href="#">Kontakt</a>
+            </div>
+            </nav>
     </div>
-    <!-- Book section -->
     <div class="bookFacts">
-      <img
-        src="images/AllQuietOn...jpg"
-        alt="Obálka knihy Na zapadni frontě klid."
-        id="cover-img"
-      />
-      <div class="bookInfo">
-        <div class="infoHeader">
-          <h1>Na západní frontě klid</h1>
-          <h2>Erich Maria Remaque</h2>
+        <img
+            src="images/AllQuietOn...jpg"
+            alt="Obálka knihy Na zapadni frontě klid."
+            id="cover-img"
+        />
+        <div class="bookInfo">
+            <div class="infoHeader">
+                <h1>Na západní frontě klid</h1>
+                <h2>Erich Maria Remaque</h2>
+            </div>
+            <div class="quickinfo">
+                <h2>O knize</h2>
+                <p>
+                    Román Na západní frontě klid popisuje hrůzy první světové války z
+                    pohledu mladého německého vojáka Paula Bäumera. Paul a jeho přátelé
+                    narukují do války plni idealismu, ale rychle poznávají, že realita
+                    boje je brutální a nelítostná. Remarque detailně vykresluje
+                    zákopovou válku, každodenní utrpení vojáků, jejich ztráty, zranění a
+                    zoufalství. Hlavní postava postupně ztrácí všechny iluze o hrdinství
+                    a smyslu války, až se cítí zcela odcizená od civilního života.
+                </p>
+                <h2>Můj názor</h2>
+                <p>
+                    Tato kniha je velice depresivní. Její příběh nutí k zamyšlení nad
+                    válkou a jejími následky. Autor válku prožil, takže vypráví z
+                    vlastní zkušenosti, a přenese čtenáře na bojiště první světové
+                    války.
+                </p>
+                <h2>Doporučení a moje honocení</h2>
+                <p>
+                    Kniha rozhodně stojí za prečtení, jedná se o jeden z nejznámějších
+                    (proti)válečných románů. Doporučuji pro starší, protože obsahuje
+                    spousty krvavý a násilných scén.<b> 9/10</b>
+                    <img src="images/star2.png" alt="A star icon" id="star-icon" />.
+                </p>
+            </div>
+            <div class="button-container">
+                <div class="like-buttons">
+                    <img
+                        src="images/up.png"
+                        alt="Like"
+                        class="like-control"
+                        id="like-site1"
+                        onclick="addLike(1)"
+                    />
+                    <span class="like-count" id="like-count-site1">0</span>
+                    <img
+                        src="images/down.png"
+                        alt="Dislike"
+                        class="like-control"
+                        id="dislike-site1"
+                        onclick="addDislike(1)"
+                    />
+                    <span class="like-count" id="dislike-count-site1">0</span>
+                </div>
+            <button id="back" onclick="document.location='index.html'">Zpět</button>
         </div>
-        <div class="quickinfo">
-          <h2>O knize</h2>
-          <p>
-            Román Na západní frontě klid popisuje hrůzy první světové války z
-            pohledu mladého německého vojáka Paula Bäumera. Paul a jeho přátelé
-            narukují do války plni idealismu, ale rychle poznávají, že realita
-            boje je brutální a nelítostná. Remarque detailně vykresluje
-            zákopovou válku, každodenní utrpení vojáků, jejich ztráty, zranění a
-            zoufalství. Hlavní postava postupně ztrácí všechny iluze o hrdinství
-            a smyslu války, až se cítí zcela odcizená od civilního života.
-          </p>
-          <h2>Můj názor</h2>
-          <p>
-            Tato kniha je velice depresivní. Její příběh nutí k zamyšlení nad
-            válkou a jejími následky. Autor válku prožil, takže vypráví z
-            vlastní zkušenosti, a přenese čtenáře na bojiště první světové
-            války.
-          </p>
-          <h2>Doporučení a moje honocení</h2>
-          <p>
-            Kniha rozhodně stojí za prečtení, jedná se o jeden z nejznámějších
-            (proti)válečných románů. Doporučuji pro starší, protože obsahuje
-            spousty krvavý a násilných scén.<b> 9/10</b>
-            <img src="images/star2.png" alt="A star icon" id="star-icon" />.
-          </p>
-        </div>
-        <div class="button-container">
-          <div class="like-buttons">
-            <img
-              src="images/up.png"
-              alt="Like"
-              class="like-control"
-              id="like-site1"
-              onclick="addLike(1)"
-            />
-            <span class="like-count" id="like-count-site2">0</span>
-            <img
-              src="images/down.png"
-              alt="Dislike"
-              class="like-control"
-              id="dislike-site1"
-              onclick="addDislike(1)"
-            />
-            <span class="like-count" id="dislike-count-site2">0</span>
-          </div>
-        <button id="back" onclick="document.location='index.html'">Zpět</button>
-      </div>
     </div>
-  </body>
-  <script src="script.js" defer></script>
+</body>
+<script src="script.js" defer></script>
 </html>
