@@ -78,9 +78,28 @@
             <img src="images/star2.png" alt="A star icon" id="star-icon" />.
           </p>
         </div>
+        <div class="button-container">
+          <div class="like-buttons">
+            <img
+              src="images/up.png"
+              alt="Like"
+              class="like-control"
+              id="like-site1"
+              onclick="addLike(1)"
+            />
+            <span class="like-count" id="like-count-site2">0</span>
+            <img
+              src="images/down.png"
+              alt="Dislike"
+              class="like-control"
+              id="dislike-site1"
+              onclick="addDislike(1)"
+            />
+            <span class="like-count" id="dislike-count-site2">0</span>
+          </div>
         <button id="back" onclick="document.location='index.html'">Zpět</button>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </html>
