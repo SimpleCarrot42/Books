@@ -1,84 +1,101 @@
 <!DOCTYPE html>
 <html lang="cz">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Den pro Šakala</title>
     <link
-      rel="icon"
-      href="images/book_24dp_000_FILL0_wght400_GRAD0_opsz24.png"
+        rel="icon"
+        href="images/book_24dp_000_FILL0_wght400_GRAD0_opsz24.png"
     />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div id="fix">
-      <nav>
-        <h1>Knihy</h1>
-        <ul id="nav-menu">
-          <a onclick="showSidebar()" href="#" id="no-hover">
-            <img
-              src="images/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
-          </a>
-        </ul>
-        <div class="sidebar" style="display: none">
-          <a onclick="hideSidebar()" href="#">
-            <img
-              src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
-              alt="Close icon"
-            />
-          </a>
-          <a href="index.html">Knihy</a>
-          <a href="#">O mne</a>
-          <a href="#">Kontakt</a>
-        </div>
-        <!-- Place for a theme switcher -->
-      </nav>
+        <nav>
+            <h1>Knihy</h1>
+            <ul id="nav-menu">
+                <a onclick="showSidebar()" href="#" id="no-hover">
+                    <img
+                        src="images/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                    />
+                </a>
+            </ul>
+            <div class="sidebar" style="display: none">
+                <a onclick="hideSidebar()" href="#">
+                    <img
+                        src="images/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt="Close icon"
+                    />
+                </a>
+                <a href="index.html">Knihy</a>
+                <a href="#">O mne</a>
+                <a href="#">Kontakt</a>
+            </div>
+            </nav>
     </div>
-    <!-- Book section -->
     <div class="bookFacts">
-      <img
-        src="images/OneDayForTheJackal.jpg"
-        alt="Obálka knihy jeden den pro Sakala"
-      />
-      <div class="bookInfo">
-        <div class="infoHeader">
-          <h1>Den pro Šakala</h1>
-          <h2>Frederick Forsyth</h2>
+        <img
+            src="images/OneDayForTheJackal.jpg"
+            alt="Obálka knihy jeden den pro Sakala"
+        />
+        <div class="bookInfo">
+            <div class="infoHeader">
+                <h1>Den pro Šakala</h1>
+                <h2>Frederick Forsyth</h2>
+            </div>
+            <div class="quickinfo">
+                <h2>Stručný popis</h2>
+                <p>
+                    Den pro Šakala je napínavý thriller o profesionálním zabijákovi,
+                    který je najat, aby zabil francouzského prezidenta Charlese de
+                    Gaulla. Příběh sleduje, jak „Šakal“, neznámý nájemný vrah, pečlivě
+                    plánuje atentát, přičemž zůstává téměř nepolapitelný. Paralelně s
+                    tím detektiv Claude Lebel vede závod s časem, aby atentátu zabránil.
+                    Forsyth mistrně popisuje detaily přípravy atentátu a policejního
+                    vyšetřování, což vytváří napětí až do samotného konce. Román je
+                    inspirován skutečnými událostmi a nabízí fascinující pohled na
+                    politiku, špionáž a terorismus.
+                </p>
+                <h2>Vlastní nazor</h2>
+                <p>
+                    Kniha byla skvělá. Zápletka byla propracována do nejmenších detailů.
+                    Autorovo umění popisovat děj z vícé úhlů nám umožnuje sledovat
+                    postup obou stran na ráz, to je společne s dějem neskutečně dobře
+                    zkombinované a knize dodalo na čtivosti a zahímavosti.
+                </p>
+                <h2>Doporučení a moje hodnocení</h2>
+                <p>
+                    Knihu je pro starší. Zápletkou knihy je atentát, takže se v ní
+                    vyskytuje násilí a krev. Rozhodně doporučuji je to zajímavá a čtivá
+                    kniha. Jediné co vytknu, je přílišné prodlužovaní a napínaní, dávám
+                    tedy <b>8/10</b
+                    ><img src="images/star2.png" alt="A star icon" id="star-icon" />!
+                </p>
+            </div>
+            <div class="button-container">
+                <div class="like-buttons">
+                    <img
+                        src="images/up.png"
+                        alt="Like"
+                        class="like-control"
+                        id="like-site3"
+                        onclick="addLike(3)"
+                    />
+                    <span class="like-count" id="like-count-site3">0</span>
+                    <img
+                        src="images/down.png"
+                        alt="Dislike"
+                        class="like-control"
+                        id="dislike-site3"
+                        onclick="addDislike(3)"
+                    />
+                    <span class="like-count" id="dislike-count-site3">0</span>
+                </div>
+            <button id="back" onclick="document.location='index.html'">Zpět</button>
         </div>
-        <div class="quickinfo">
-          <h2>Stručný popis</h2>
-          <p>
-            Den pro Šakala je napínavý thriller o profesionálním zabijákovi,
-            který je najat, aby zabil francouzského prezidenta Charlese de
-            Gaulla. Příběh sleduje, jak „Šakal“, neznámý nájemný vrah, pečlivě
-            plánuje atentát, přičemž zůstává téměř nepolapitelný. Paralelně s
-            tím detektiv Claude Lebel vede závod s časem, aby atentátu zabránil.
-            Forsyth mistrně popisuje detaily přípravy atentátu a policejního
-            vyšetřování, což vytváří napětí až do samotného konce. Román je
-            inspirován skutečnými událostmi a nabízí fascinující pohled na
-            politiku, špionáž a terorismus.
-          </p>
-          <h2>Vlastní nazor</h2>
-          <p>
-            Kniha byla skvělá. Zápletka byla propracována do nejmenších detailů.
-            Autorovo umění popisovat děj z vícé úhlů nám umožnuje sledovat
-            postup obou stran na ráz, to je společne s dějem neskutečně dobře
-            zkombinované a knize dodalo na čtivosti a zahímavosti.
-          </p>
-          <h2>Doporučení a moje hodnocení</h2>
-          <p>
-            Knihu je pro starší. Zápletkou knihy je atentát, takže se v ní
-            vyskytuje násilí a krev. Rozhodně doporučuji je to zajímavá a čtivá
-            kniha. Jediné co vytknu, je přílišné prodlužovaní a napínaní, dávám
-            tedy <b>8/10</b
-            ><img src="images/star2.png" alt="A star icon" id="star-icon" />!
-          </p>
-        </div>
-        <button id="back" onclick="document.location='index.html'">Zpět</button>
-      </div>
     </div>
-  </body>
-  <script src="script.js"></script>
+</body>
+<script src="script.js"></script>
 </html>
